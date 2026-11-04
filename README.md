@@ -35,7 +35,7 @@ Brains available (`spec.brain`; the preferred one goes first and the others are 
 
 ## Try the demo (Android)
 
-1. Download `app-release.apk` from the [demo release](LINK_TO_RELEASE).
+1. Download `app-release.apk` from the [demo release](https://github.com/Buzka42/inspiratio_meta/releases/tag/demo-v1).
 2. On your Android phone, allow installs from unknown sources for your browser or file manager, then open the APK.
 3. Open Illunis. It connects to a dedicated demo device on the hosted Worker; no pairing is needed.
 
