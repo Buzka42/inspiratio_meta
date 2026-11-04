@@ -223,7 +223,7 @@ Rules that apply everywhere:
 ## Hackathon submission
 
 - **Track:** Meta Global AI Developer Hackathon, Indie Developer (individual entry).
-- **Demo video (3 minutes):** VIDEO_LINK_HERE
+- **Demo video (3 minutes):** https://youtu.be/Wgojx_zHmdQ
 - **New work:** the framework was built 3 and 4 Nov 2026 on top of the Illunis showcase app. The file-by-file split and
   the commands to check it are in [NEW_WORK.md](NEW_WORK.md). Full source history: https://github.com/Buzka42/illunisv2
 - **Models:** Muse as the brain and aggregator through the Meta Model API (`muse-spark-1.3`), and Muse Spark Open on
