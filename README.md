@@ -6,7 +6,6 @@ rules. The user asks for a change in words; the Worker validates it, shows a dif
 the user approves. Guardrails live in code, so no spec can turn them off. The framework (spec and enforcement, skill
 registry and modules, knowledge banks, bot integration and pairing, the policy proxy, the chat settings card) was built
 during the event, on top of Illunis. What is new and what is older is listed file by file in [NEW_WORK.md](NEW_WORK.md).
-(Working name, not cleared: [docs/META_SLICE.md](docs/META_SLICE.md), "Name".)
 
 **Illunis** is the showcase app the framework was built on top of, under [examples/illunis/](examples/illunis/README.md).
 Its wellbeing content, expert council, phone UI, sky and voice are **pre-event code** (first added 24 to 26 Oct 2026; features added 28 to 30 Oct for the
@@ -200,16 +199,15 @@ Rules that apply everywhere:
 
 ## Hackathon submission
 
-- **Nebius track (due 30 Oct, a separate submission):** the Experts slice runs on Nemotron via Nebius Token Factory
-  (brain and aggregator), shown alone. A walkthrough shows how it runs in the full app.
-  Text chat is the interface; voice follows after the hackathons.
-- **Meta track:** the submission presents the framework (built 3 and 4 Nov), with
-  Illunis, the pre-event showcase app, as the example it runs on: Muse as brain and aggregator (the Meta demo deploy prefers
-  Muse for both the council and the daily reply, with the fallbacks above), skills that switch on and off, and
-  changes made by chat or through the bot. The demo deploy (`tools/meta/deploy-demo.sh`)
-  keeps the coaching experts (training, diet) and the medical experts off.
-- **Demonstration:** all demos run on generated, synthetic data. Personal data is used
-  only for testing, by the owner.
+- **Track:** Meta Global AI Developer Hackathon, Indie Developer (individual entry).
+- **Demo video (3 minutes):** VIDEO_LINK_HERE
+- **New work:** the framework was built 3 and 4 Nov 2026 on top of the Illunis showcase app. The file-by-file split and
+  the commands to check it are in [NEW_WORK.md](NEW_WORK.md). Full source history: https://github.com/Buzka42/illunisv2
+- **Models:** Muse as the brain and aggregator through the Meta Model API (`muse-spark-1.3`), and Muse Spark Open on
+  Baseten (`meta-models/muse-spark-open-1026`) as an adapter. The council falls back to Nemotron on Nebius when Muse
+  fails; food-log parsing and knowledge embeddings run on other models. See [docs/META_SLICE.md](docs/META_SLICE.md).
+- **Demo deploy:** `tools/meta/deploy-demo.sh` keeps the coaching experts (training, diet) and the medical experts off.
+- **Demonstration:** the demo uses generated, synthetic data.
 
 ---
 
