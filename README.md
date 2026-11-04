@@ -1,30 +1,20 @@
-# Inspiratio: a framework for personal assistants on Muse
+# Inspiratio: a framework for personal assistants, built to run on Muse
 
-**Inspiratio** is an adaptable framework for building personal assistant apps. It is designed to run on **Muse**: the
-Muse bot is the assistant the user talks to, and the Muse models are its brain. Inspiratio turns that assistant into one
-the user can configure and reshape by talking to it, without a developer and without a prompt rewrite.
+Inspiratio is an adaptable framework for building personal assistant apps. Users change how their assistant works by
+talking to it, and every change is shown and approved before it takes effect. It is designed to run on **Muse**: the
+Muse bot is the assistant the user talks to, and the Muse models are its brain.
 
-- **Assistant (Muse bot).** Designed to run on the Muse bot. The phone pairs with the bot using a short code, and a
-  signed setup message gives the bot its rules, skills, memory location and notification rules. **Tested on Hermes**, the
-  bot we can run locally: the signed setup and the bot's change requests are covered by tests, and the app's chat changes
-  were run on a phone. The live Hermes pairing and setup run still needs the profile reinstalled. The Muse bot itself is
-  not available to us, so the Muse path is prepared through a Worker-hosted backend that uses the Muse model API; it is
-  built and covered by server tests but not yet run live.
-- **Brain (Muse models).** `muse-spark-1.3` on the Meta Model API writes the answers and runs the cited web search. Muse
-  Spark Open on Baseten is an alternative brain. Nemotron on Nebius is a fallback, and the response names whichever model
-  answered.
-- **Council (checks).** Role-separated experts answer from retrieved sources, and uncited claims are dropped before the
-  reply. Fine-tuned Spark models for the council are planned and not yet built.
+- **Assistant.** The user pairs their phone with their Muse bot using a short code. A signed setup message then gives the
+  bot its rules: skills, memory location, notification rules and what it must never do. The bot confirms the version it
+  is running. Inspiratio is tested with Hermes, a bot we can run locally, and prepared for Muse through the Muse model API.
+- **Brain.** `muse-spark-1.3` on the Meta Model API writes the answers, runs cited web search and produces the daily reply.
+  Muse Spark Open on Baseten is an alternative brain behind the same interface. Nemotron on Nebius is a fallback, and each
+  response names the model that answered.
+- **Council.** Role-separated experts answer from retrieved sources, and any claim without a matching source is dropped
+  before the reply. Fine-tuned Spark models for the council are coming soon.
 
-Enforcement runs across all three: approved settings apply to every request, guardrails run in code before any model
+Enforcement runs across all three layers. Approved settings apply to every request, guardrails run in code before any model
 call, and personal data leaves the device only with the user's approval.
-
-**Inspiratio** is the framework and the submission. It lets a personal agent's user change its behaviour safely: one JSON
-spec per deploy holds the guidelines, skill switches, memory mode, brain choice and notification
-rules. The user asks for a change in words; the Worker validates it, shows a diff and a readback, and applies it only after
-the user approves. Guardrails live in code, so no spec can turn them off. The framework (spec and enforcement, skill
-registry and modules, knowledge banks, bot integration and pairing, the policy proxy, the chat settings card) was built
-during the event, on top of Illunis. What is new and what is older is listed file by file in [NEW_WORK.md](NEW_WORK.md).
 
 **Illunis** is the showcase app the framework was built on top of, under [examples/illunis/](examples/illunis/README.md).
 Its wellbeing content, expert council, phone UI, sky and voice are **pre-event code** (first added 24 to 26 Oct 2026; features added 28 to 30 Oct for the
