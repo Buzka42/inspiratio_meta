@@ -1,0 +1,79 @@
+{
+  "id": "paced_breath",
+  "name": "Paced breath",
+  "aliases": [
+    "slow breathing",
+    "resonance breathing",
+    "six breaths a minute",
+    "coherent breathing"
+  ],
+  "kind": "breath",
+  "level": "basic",
+  "progression": {
+    "stage": "basic_pranayama",
+    "order": 2
+  },
+  "evidence": "moderate",
+  "available": true,
+  "duration_s": 300,
+  "count_in_cycles": 3,
+  "pacing": {
+    "phases": [
+      {
+        "phase": "in",
+        "seconds": 5
+      },
+      {
+        "phase": "out",
+        "seconds": 5
+      }
+    ],
+    "rate_bpm": 6,
+    "guided": true
+  },
+  "cues": [
+    {
+      "at_s": 0,
+      "text": "Breathe in as the shape grows and out as it shrinks.",
+      "speak": true
+    },
+    {
+      "at_s": 30,
+      "text": "This pace is a common starting point, not a personal setting. If it feels too slow, breathe at your own pace.",
+      "speak": true
+    },
+    {
+      "at_s": 150,
+      "text": "If your mind wanders, come back to the shape.",
+      "speak": true
+    },
+    {
+      "at_s": 270,
+      "text": "A few more breaths.",
+      "speak": true
+    }
+  ],
+  "screens": [
+    "default"
+  ],
+  "stop_prompts": [
+    "Stop if you feel dizzy or lightheaded.",
+    "Stop if you feel tingling or numbness in your hands or face.",
+    "Stop if your chest feels tight.",
+    "Stop if your vision changes or blurs.",
+    "You can stop at any time."
+  ],
+  "copy": {
+    "intent": "Slow your breath and notice how it feels.",
+    "end": "Let your breath return to its own rhythm. Notice how you feel now.",
+    "notice": "This is not medical advice. If you have a health condition or feel unwell, speak to a qualified clinician before you practise."
+  },
+  "sources": [
+    "S18",
+    "S19",
+    "S20",
+    "S22"
+  ],
+  "research_section": "5 (session 2), 2.2, 6.1",
+  "note": "Moderate is for the slow-breathing and HRV association (Laborde 2022, abstract only). Six breaths per minute as a default for mood is weak. The copy makes no HRV or health claim."
+}

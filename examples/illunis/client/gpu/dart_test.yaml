@@ -1,0 +1,5 @@
+# The Impeller host tests (--enable-impeller --enable-flutter-gpu) build the
+# surface pipeline in software Vulkan; with the cloud-plate shader that can
+# pass the default 30 s when test files run side by side. Expectations are
+# unchanged; only the time limit is doubled.
+timeout: 2x

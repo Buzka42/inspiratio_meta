@@ -1,0 +1,237 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "illunis/technique.schema.json",
+  "title": "Breathwork or meditation technique",
+  "description": "One technique in content/breathwork/. Phase meanings: in = inhale; top_up = a short second inhale on top of the first; hold = a short, comfortable, unforced pause; out = exhale; hold_empty = an empty-lung retention after a full exhale (never allowed in basic techniques). pacing is null when the research gives no playable timing. pacing.guided false means the visual is an ambient reference at the default rate and the user is not asked to match it.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "name",
+    "aliases",
+    "kind",
+    "level",
+    "evidence",
+    "available",
+    "duration_s",
+    "count_in_cycles",
+    "pacing",
+    "cues",
+    "screens",
+    "stop_prompts",
+    "copy",
+    "sources"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 60
+    },
+    "aliases": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 60
+      }
+    },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "breath",
+        "meditation"
+      ]
+    },
+    "level": {
+      "type": "string",
+      "enum": [
+        "basic",
+        "advanced"
+      ]
+    },
+    "evidence": {
+      "type": "string",
+      "enum": [
+        "moderate",
+        "weak",
+        "practitioner"
+      ]
+    },
+    "available": {
+      "type": "boolean"
+    },
+    "duration_s": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "count_in_cycles": {
+      "type": "integer",
+      "const": 3
+    },
+    "pacing": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "required": [
+        "phases",
+        "rate_bpm"
+      ],
+      "properties": {
+        "phases": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "phase",
+              "seconds"
+            ],
+            "properties": {
+              "phase": {
+                "type": "string",
+                "enum": [
+                  "in",
+                  "top_up",
+                  "hold",
+                  "out",
+                  "hold_empty"
+                ]
+              },
+              "seconds": {
+                "type": "number",
+                "exclusiveMinimum": 0,
+                "maximum": 120
+              }
+            }
+          }
+        },
+        "rate_bpm": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "guided": {
+          "type": "boolean"
+        }
+      }
+    },
+    "cues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "at_s",
+          "text",
+          "speak"
+        ],
+        "properties": {
+          "at_s": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "speak": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "screens": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "default",
+          "holds",
+          "forceful",
+          "holotropic"
+        ]
+      }
+    },
+    "stop_prompts": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 200
+      }
+    },
+    "copy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "intent",
+        "end",
+        "notice"
+      ],
+      "properties": {
+        "intent": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 300
+        },
+        "end": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 300
+        },
+        "notice": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 300
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^S[0-9]+$"
+      }
+    },
+    "research_section": {
+      "type": "string",
+      "minLength": 1
+    },
+    "note": {
+      "type": "string",
+      "minLength": 1
+    },
+    "progression": {
+      "type": "object",
+      "required": [
+        "stage",
+        "order"
+      ],
+      "properties": {
+        "stage": {
+          "type": "string",
+          "enum": [
+            "basic_pranayama"
+          ]
+        },
+        "order": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 8
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

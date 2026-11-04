@@ -1,0 +1,34 @@
+{
+  "id": "holotropic",
+  "name": "Holotropic breathwork",
+  "aliases": [
+    "holotropic breathing",
+    "holotropic",
+    "grof breathwork"
+  ],
+  "kind": "breath",
+  "level": "advanced",
+  "evidence": "practitioner",
+  "available": false,
+  "duration_s": 0,
+  "count_in_cycles": 3,
+  "pacing": null,
+  "cues": [],
+  "screens": [
+    "holotropic"
+  ],
+  "stop_prompts": [],
+  "copy": {
+    "intent": "Holotropic breathwork is in the library for reference. It cannot be guided in this app.",
+    "end": "If you want to learn it, look for a qualified, in-person teacher.",
+    "notice": "This is not medical advice. If you have a health condition or feel unwell, speak to a qualified clinician before you practise."
+  },
+  "sources": [
+    "S1",
+    "S4",
+    "S7",
+    "S8"
+  ],
+  "research_section": "1, 5.2",
+  "note": "Excluded: a two to three hour facilitated format with a Sitter, deliberate fast deep breathing, long practitioner exclusion lists and no controlled safety data. Kept as a reference entry only (plan section E1)."
+}

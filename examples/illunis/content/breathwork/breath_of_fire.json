@@ -1,0 +1,38 @@
+{
+  "id": "breath_of_fire",
+  "name": "Breath of fire",
+  "aliases": [
+    "bhastrika",
+    "bellows breath"
+  ],
+  "kind": "breath",
+  "level": "advanced",
+  "evidence": "practitioner",
+  "available": false,
+  "duration_s": 0,
+  "count_in_cycles": 3,
+  "pacing": null,
+  "cues": [],
+  "screens": [
+    "default",
+    "forceful"
+  ],
+  "stop_prompts": [
+    "Stop if you feel dizzy or lightheaded.",
+    "Stop if you feel tingling or numbness in your hands or face.",
+    "Stop if your chest feels tight.",
+    "Stop if your vision changes or blurs.",
+    "You can stop at any time."
+  ],
+  "copy": {
+    "intent": "Breath of fire is in the library for reference. It cannot be guided in this app.",
+    "end": "If you want to learn it, look for a qualified, in-person teacher.",
+    "notice": "This is not medical advice. If you have a health condition or feel unwell, speak to a qualified clinician before you practise."
+  },
+  "sources": [
+    "S13",
+    "S29"
+  ],
+  "research_section": "4, 5.2",
+  "note": "Excluded from the default library: forceful hyperventilation. Research groups it with kapalabhati and bhastrika and gives no timing, so there is no playable pacing and it is unavailable until a timing source is reviewed."
+}

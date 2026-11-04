@@ -1,0 +1,40 @@
+{
+  "id": "kumbhaka",
+  "name": "Kumbhaka with retention",
+  "aliases": [
+    "kumbhaka",
+    "breath retention",
+    "breath hold"
+  ],
+  "kind": "breath",
+  "level": "advanced",
+  "evidence": "practitioner",
+  "available": false,
+  "duration_s": 0,
+  "count_in_cycles": 3,
+  "pacing": null,
+  "cues": [],
+  "screens": [
+    "default",
+    "holds"
+  ],
+  "stop_prompts": [
+    "Stop if you feel dizzy or lightheaded.",
+    "Stop if you feel tingling or numbness in your hands or face.",
+    "Stop if your chest feels tight.",
+    "Stop if your vision changes or blurs.",
+    "You can stop at any time."
+  ],
+  "copy": {
+    "intent": "Kumbhaka with retention is in the library for reference. It cannot be guided in this app.",
+    "end": "If you want to learn it, look for a qualified, in-person teacher.",
+    "notice": "This is not medical advice. If you have a health condition or feel unwell, speak to a qualified clinician before you practise."
+  },
+  "sources": [
+    "S25",
+    "S27",
+    "S28"
+  ],
+  "research_section": "2.3, 4, 5.2",
+  "note": "Excluded beyond a short comfortable pause: no systematic safety review. Research gives no retention timing (the only figure, a 15 s empty-lung hold, belongs to the excluded Balban hyperventilation arm), so there is no playable pacing."
+}

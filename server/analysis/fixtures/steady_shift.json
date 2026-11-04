@@ -1,0 +1,201 @@
+{
+ "name": "steady_shift",
+ "derivation": [
+  "resting_hr days 1-14: deviations from 60 are +3,-3,+3,-3,+2,-2,+2,-2 and six 0s. Sum 0, sum of squares 52, SD = sqrt(52/13) = 2. Days 15-21 all 64, so z = (64-60)/2 = 2 -> rising, medium (n 14 >= 10, recent 7 >= 5).",
+  "hrv_rmssd: same deviation pattern around 50 -> mean 50, SD 2. Recent 49,51,50,50,49,51,50 -> mean 50, z 0 -> stable, no finding.",
+  "sleep_hours: deviations x0.5 around 7 -> mean 7, SD 1. Recent all 5.5 -> z -1.5 -> falling, low (|z| < 2)."
+ ],
+ "series": [
+  {
+   "date": "2026-01-01",
+   "resting_hr": 63,
+   "hrv_rmssd": 53,
+   "sleep_hours": 8.5,
+   "flags": []
+  },
+  {
+   "date": "2026-01-02",
+   "resting_hr": 57,
+   "hrv_rmssd": 47,
+   "sleep_hours": 5.5,
+   "flags": []
+  },
+  {
+   "date": "2026-01-03",
+   "resting_hr": 63,
+   "hrv_rmssd": 53,
+   "sleep_hours": 8.5,
+   "flags": []
+  },
+  {
+   "date": "2026-01-04",
+   "resting_hr": 57,
+   "hrv_rmssd": 47,
+   "sleep_hours": 5.5,
+   "flags": []
+  },
+  {
+   "date": "2026-01-05",
+   "resting_hr": 62,
+   "hrv_rmssd": 52,
+   "sleep_hours": 8,
+   "flags": []
+  },
+  {
+   "date": "2026-01-06",
+   "resting_hr": 58,
+   "hrv_rmssd": 48,
+   "sleep_hours": 6,
+   "flags": []
+  },
+  {
+   "date": "2026-01-07",
+   "resting_hr": 62,
+   "hrv_rmssd": 52,
+   "sleep_hours": 8,
+   "flags": []
+  },
+  {
+   "date": "2026-01-08",
+   "resting_hr": 58,
+   "hrv_rmssd": 48,
+   "sleep_hours": 6,
+   "flags": []
+  },
+  {
+   "date": "2026-01-09",
+   "resting_hr": 60,
+   "hrv_rmssd": 50,
+   "sleep_hours": 7,
+   "flags": []
+  },
+  {
+   "date": "2026-01-10",
+   "resting_hr": 60,
+   "hrv_rmssd": 50,
+   "sleep_hours": 7,
+   "flags": []
+  },
+  {
+   "date": "2026-01-11",
+   "resting_hr": 60,
+   "hrv_rmssd": 50,
+   "sleep_hours": 7,
+   "flags": []
+  },
+  {
+   "date": "2026-01-12",
+   "resting_hr": 60,
+   "hrv_rmssd": 50,
+   "sleep_hours": 7,
+   "flags": []
+  },
+  {
+   "date": "2026-01-13",
+   "resting_hr": 60,
+   "hrv_rmssd": 50,
+   "sleep_hours": 7,
+   "flags": []
+  },
+  {
+   "date": "2026-01-14",
+   "resting_hr": 60,
+   "hrv_rmssd": 50,
+   "sleep_hours": 7,
+   "flags": []
+  },
+  {
+   "date": "2026-01-15",
+   "resting_hr": 64,
+   "hrv_rmssd": 49,
+   "sleep_hours": 5.5,
+   "flags": []
+  },
+  {
+   "date": "2026-01-16",
+   "resting_hr": 64,
+   "hrv_rmssd": 51,
+   "sleep_hours": 5.5,
+   "flags": []
+  },
+  {
+   "date": "2026-01-17",
+   "resting_hr": 64,
+   "hrv_rmssd": 50,
+   "sleep_hours": 5.5,
+   "flags": []
+  },
+  {
+   "date": "2026-01-18",
+   "resting_hr": 64,
+   "hrv_rmssd": 50,
+   "sleep_hours": 5.5,
+   "flags": []
+  },
+  {
+   "date": "2026-01-19",
+   "resting_hr": 64,
+   "hrv_rmssd": 49,
+   "sleep_hours": 5.5,
+   "flags": []
+  },
+  {
+   "date": "2026-01-20",
+   "resting_hr": 64,
+   "hrv_rmssd": 51,
+   "sleep_hours": 5.5,
+   "flags": []
+  },
+  {
+   "date": "2026-01-21",
+   "resting_hr": 64,
+   "hrv_rmssd": 50,
+   "sleep_hours": 5.5,
+   "flags": []
+  }
+ ],
+ "expected": {
+  "resting_hr": {
+   "baseline": {
+    "mean": 60,
+    "sd": 2,
+    "n": 14
+   },
+   "recent_mean": 64,
+   "z_score": 2,
+   "trend": "rising"
+  },
+  "hrv_rmssd": {
+   "baseline": {
+    "mean": 50,
+    "sd": 2,
+    "n": 14
+   },
+   "recent_mean": 50,
+   "z_score": 0,
+   "trend": "stable"
+  },
+  "sleep_hours": {
+   "baseline": {
+    "mean": 7,
+    "sd": 1,
+    "n": 14
+   },
+   "recent_mean": 5.5,
+   "z_score": -1.5,
+   "trend": "falling"
+  },
+  "findings": [
+   [
+    "resting_hr",
+    "medium"
+   ],
+   [
+    "sleep_hours",
+    "low"
+   ]
+  ],
+  "missing_nights": [],
+  "flagged_days": []
+ }
+}

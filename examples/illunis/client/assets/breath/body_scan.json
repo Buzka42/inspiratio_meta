@@ -1,0 +1,92 @@
+{
+  "id": "body_scan",
+  "name": "Body scan",
+  "aliases": [
+    "body scan meditation",
+    "body sweep"
+  ],
+  "kind": "meditation",
+  "level": "basic",
+  "progression": {
+    "stage": "basic_pranayama",
+    "order": 7
+  },
+  "evidence": "moderate",
+  "available": true,
+  "duration_s": 600,
+  "count_in_cycles": 3,
+  "pacing": {
+    "phases": [
+      {
+        "phase": "in",
+        "seconds": 5
+      },
+      {
+        "phase": "out",
+        "seconds": 5
+      }
+    ],
+    "rate_bpm": 6,
+    "guided": false
+  },
+  "cues": [
+    {
+      "at_s": 0,
+      "text": "Sit or lie down. You can keep your eyes open or closed.",
+      "speak": true
+    },
+    {
+      "at_s": 30,
+      "text": "Bring your attention to your feet. Notice whatever is there.",
+      "speak": true
+    },
+    {
+      "at_s": 120,
+      "text": "Move your attention up through your legs.",
+      "speak": true
+    },
+    {
+      "at_s": 210,
+      "text": "Notice your hips, belly and lower back.",
+      "speak": true
+    },
+    {
+      "at_s": 300,
+      "text": "Notice your chest, upper back and shoulders.",
+      "speak": true
+    },
+    {
+      "at_s": 390,
+      "text": "Move down your arms to your hands.",
+      "speak": true
+    },
+    {
+      "at_s": 480,
+      "text": "Notice your neck, face and head.",
+      "speak": true
+    },
+    {
+      "at_s": 560,
+      "text": "Now notice your whole body at once.",
+      "speak": true
+    }
+  ],
+  "screens": [
+    "default"
+  ],
+  "stop_prompts": [
+    "Stop if you feel distressed or uneasy.",
+    "You can stop at any time."
+  ],
+  "copy": {
+    "intent": "Move your attention slowly through your body and notice what you find.",
+    "end": "Wiggle your fingers and toes, and take your time before you get up.",
+    "notice": "This is not medical advice. If you have a health condition or feel unwell, speak to a qualified clinician before you practise."
+  },
+  "sources": [
+    "S35",
+    "S36"
+  ],
+  "research_section": "5 (session 6), 3.2",
+  "note": "Moderate is for a small effect on self-reported mindfulness only (Gan 2022); weak for any health outcome. Research gives no breath pacing; the default rate is an ambient, unguided visual only. Body-part cue timings are a team choice. Verify before release."
+}

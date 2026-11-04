@@ -1,0 +1,7 @@
+name: illunis_memory
+version: 0.1.0
+description: "Illunis long-term memory (local SQLite + FTS5) plus signed push to the Illunis inbox."
+hooks:
+  - prefetch
+  - sync_turn
+  - on_session_end

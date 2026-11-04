@@ -1,0 +1,69 @@
+{
+  "id": "breath_observation",
+  "name": "Breath as it is",
+  "aliases": [
+    "breath observation",
+    "natural breath",
+    "watch the breath",
+    "observe the breath"
+  ],
+  "kind": "meditation",
+  "level": "basic",
+  "progression": {
+    "stage": "basic_pranayama",
+    "order": 1
+  },
+  "evidence": "weak",
+  "available": true,
+  "duration_s": 180,
+  "count_in_cycles": 3,
+  "pacing": {
+    "phases": [
+      {
+        "phase": "in",
+        "seconds": 5
+      },
+      {
+        "phase": "out",
+        "seconds": 5
+      }
+    ],
+    "rate_bpm": 6,
+    "guided": false
+  },
+  "cues": [
+    {
+      "at_s": 0,
+      "text": "Let your breath move on its own. There is nothing to change.",
+      "speak": true
+    },
+    {
+      "at_s": 60,
+      "text": "If you like, start counting each out-breath. Let the breath stay as it is.",
+      "speak": true
+    },
+    {
+      "at_s": 150,
+      "text": "Keep noticing for a few more breaths.",
+      "speak": true
+    }
+  ],
+  "screens": [
+    "default"
+  ],
+  "stop_prompts": [
+    "Stop if you feel distressed or uneasy.",
+    "You can stop at any time."
+  ],
+  "copy": {
+    "intent": "Notice your breath as it is, without changing it.",
+    "end": "Let your attention widen to the room. Take your time before you move on.",
+    "notice": "This is not medical advice. If you have a health condition or feel unwell, speak to a qualified clinician before you practise."
+  },
+  "sources": [
+    "S33",
+    "S34"
+  ],
+  "research_section": "5 (session 1), 3.2",
+  "note": "Research gives no pacing for natural-breath observation (no control). Pacing is the research default rate (5 s in, 5 s out) as an ambient, unguided visual only. Evidence is weak: no technique-level review found. Verify before release."
+}

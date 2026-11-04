@@ -1,0 +1,75 @@
+{
+  "id": "breath_counting",
+  "name": "Focused attention on breath",
+  "aliases": [
+    "breath counting",
+    "counting breaths",
+    "focused attention",
+    "count to ten"
+  ],
+  "kind": "meditation",
+  "level": "basic",
+  "progression": {
+    "stage": "basic_pranayama",
+    "order": 6
+  },
+  "evidence": "weak",
+  "available": true,
+  "duration_s": 600,
+  "count_in_cycles": 3,
+  "pacing": {
+    "phases": [
+      {
+        "phase": "in",
+        "seconds": 5
+      },
+      {
+        "phase": "out",
+        "seconds": 5
+      }
+    ],
+    "rate_bpm": 6,
+    "guided": false
+  },
+  "cues": [
+    {
+      "at_s": 0,
+      "text": "Count each out-breath silently, from one to ten, then start again at one.",
+      "speak": true
+    },
+    {
+      "at_s": 60,
+      "text": "If you lose count, that is normal. Start again at one.",
+      "speak": false
+    },
+    {
+      "at_s": 300,
+      "text": "Keep your attention resting on the breath and the dot.",
+      "speak": false
+    },
+    {
+      "at_s": 570,
+      "text": "Let the counting go and rest for a moment.",
+      "speak": true
+    }
+  ],
+  "screens": [
+    "default"
+  ],
+  "stop_prompts": [
+    "Stop if you feel distressed or uneasy.",
+    "You can stop at any time."
+  ],
+  "copy": {
+    "intent": "Rest your attention on the breath by counting it quietly.",
+    "end": "Let the counting go and notice how you feel now.",
+    "notice": "This is not medical advice. If you have a health condition or feel unwell, speak to a qualified clinician before you practise."
+  },
+  "sources": [
+    "S33",
+    "S34",
+    "S41"
+  ],
+  "research_section": "5 (session 7), 3.2",
+  "note": "No systematic review for breath counting was found. Research gives no pacing (silent counting of the natural breath); the default rate is an ambient, unguided visual dot only. Verify before release."
+}

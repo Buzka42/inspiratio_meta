@@ -1,0 +1,33 @@
+{
+  "id": "breathwork",
+  "name": "Breathwork",
+  "description": "Slow, gentle breathing at around 6 breaths per minute. It may help you feel calmer. It is not a treatment for any medical or mental health condition.",
+  "steps": [
+    { "text": "Sit or lie comfortably and let your shoulders drop.", "claims": [] },
+    { "text": "Breathe in gently through your nose, then breathe out slowly, at around 6 breaths per minute.", "claims": ["slow_breathing_calmer"] },
+    { "text": "Let the out-breath be a little longer than the in-breath if that feels comfortable.", "claims": ["longer_exhale"] },
+    { "text": "Continue for as long as feels comfortable, then return to normal breathing.", "claims": [] },
+    { "text": "If you feel dizzy, lightheaded or uncomfortable, stop and breathe normally.", "claims": [] }
+  ],
+  "claims": [
+    {
+      "id": "slow_breathing_calmer",
+      "text": "Slow breathing at around 6 breaths per minute may help you feel calmer.",
+      "evidence_level": "moderate",
+      "source": null
+    },
+    {
+      "id": "longer_exhale",
+      "text": "An out-breath longer than the in-breath may feel more relaxing.",
+      "evidence_level": "weak",
+      "source": null
+    }
+  ],
+  "safety_notes": [
+    "Not medical advice and not a treatment for any condition.",
+    "Stop if you feel dizzy, lightheaded, tingling or short of breath.",
+    "Do not practise while driving or in water.",
+    "If you have a heart, lung or anxiety condition, ask a clinician before starting."
+  ],
+  "evidence_review": "pending"
+}

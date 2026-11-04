@@ -1,0 +1,40 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "illunis-rework",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-10-01",
+  // node:crypto (HMAC, timingSafeEqual) for device auth.
+  "compatibility_flags": ["nodejs_compat"],
+  // Secrets are set with `wrangler secret put <NAME>`: META_API_KEY, NEBIUS_API_KEY, DEVICE_TOKEN_SECRET,
+  // MEMORY_KEY, and for synthetic test deploys only OPENCODE_API_KEY, OPENROUTER_API_KEY.
+  // Plain vars: DATA_MODE (owner_real default | synthetic), COUNCIL_NEBIUS_MODEL (required for the Nebius
+  // fallback), META_MODEL, META_BASE_URL, COUNCIL_PROVIDER, MEMORY_SERVER_URL, MEMORY_LLM_BASE_URL,
+  // MEMORY_EMBED_BASE_URL, OPENCODE_BASE_URL, QUOTA_TURNS_PER_DAY, QUOTA_COUNCIL_PER_DAY, QUOTA_DIGESTS_PER_DAY,
+  // QUOTA_REPLIES_PER_DAY, QUOTA_SESSION_SUMMARIES_PER_DAY.
+  // Hermes bridge (src/assistants/): secrets HERMES_API_KEY, ILLUNIS_INBOX_SECRET, CF_ACCESS_CLIENT_ID,
+  // CF_ACCESS_CLIENT_SECRET; vars HERMES_BASE_URL (https://<host>), HERMES_SESSION_ID (the "Bot Chat" session),
+  // ASSISTANT_OWNER_DEVICE_ID, optional QUOTA_ASSISTANT_PER_DAY, QUOTA_INBOX_POLLS_PER_DAY. They are
+  // owner-specific, so none are committed here: pass them like the deploy's other vars (for example
+  // `wrangler deploy --var NAME:value`); a deploy without them answers 503 not_configured on /assistant/*.
+  // See docs/SETUP.md. Never add secrets here.
+  "observability": { "enabled": true },
+  // Council knowledge banks (src/knowledge/retrieve.js): Workers AI embeddings (@cf/baai/bge-m3) and a
+  // Vectorize index made with `wrangler vectorize create illunis-knowledge --dimensions=1024 --metric=cosine`.
+  // Without these bindings retrieval returns no passages and medical experts cannot cite.
+  "ai": { "binding": "AI" },
+  "vectorize": [{ "binding": "KNOWLEDGE", "index_name": "illunis-knowledge" }],
+  // Per-device daily quota counters (src/worker.js QuotaCounter). Without this binding the
+  // Worker falls back to the in-memory soft limit.
+  "durable_objects": {
+    "bindings": [
+      { "name": "QUOTA_DO", "class_name": "QuotaCounter" },
+      // Assistant inbox, nonce log and pending actions (src/worker.js AssistantInbox).
+      { "name": "ASSISTANT_DO", "class_name": "AssistantInbox" }
+    ]
+  },
+  // Never edit an applied migration; add a new tag.
+  "migrations": [
+    { "tag": "v1", "new_sqlite_classes": ["QuotaCounter"] },
+    { "tag": "v2", "new_sqlite_classes": ["AssistantInbox"] }
+  ]
+}

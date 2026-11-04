@@ -1,0 +1,85 @@
+{
+  "id": "box_breathing",
+  "name": "Box, fixed count",
+  "aliases": [
+    "box breathing",
+    "square breathing",
+    "sama vritti",
+    "equal breathing",
+    "four count breathing"
+  ],
+  "kind": "breath",
+  "level": "basic",
+  "progression": {
+    "stage": "basic_pranayama",
+    "order": 5
+  },
+  "evidence": "weak",
+  "available": true,
+  "duration_s": 300,
+  "count_in_cycles": 3,
+  "pacing": {
+    "phases": [
+      {
+        "phase": "in",
+        "seconds": 4
+      },
+      {
+        "phase": "hold",
+        "seconds": 4
+      },
+      {
+        "phase": "out",
+        "seconds": 4
+      },
+      {
+        "phase": "hold",
+        "seconds": 4
+      }
+    ],
+    "rate_bpm": 3.75,
+    "guided": true
+  },
+  "cues": [
+    {
+      "at_s": 0,
+      "text": "Breathe in, pause, breathe out, pause, each for the same easy count.",
+      "speak": true
+    },
+    {
+      "at_s": 30,
+      "text": "Pause only if it is comfortable. You can skip any pause and keep the shape moving.",
+      "speak": true
+    },
+    {
+      "at_s": 150,
+      "text": "Keep the pauses soft. Never strain to hold.",
+      "speak": true
+    },
+    {
+      "at_s": 270,
+      "text": "A few more rounds.",
+      "speak": true
+    }
+  ],
+  "screens": [
+    "default"
+  ],
+  "stop_prompts": [
+    "Stop if you feel dizzy or lightheaded.",
+    "Stop if you feel tingling or numbness in your hands or face.",
+    "Stop if your chest feels tight.",
+    "Stop if your vision changes or blurs.",
+    "You can stop at any time."
+  ],
+  "copy": {
+    "intent": "Breathe in a steady square: in, pause, out, pause.",
+    "end": "Let your breath return to its own rhythm. Notice how you feel now.",
+    "notice": "This is not medical advice. If you have a health condition or feel unwell, speak to a qualified clinician before you practise."
+  },
+  "sources": [
+    "S41"
+  ],
+  "research_section": "5 (session 5), 2.1, 6.1",
+  "note": "Fixed 4 s counts from the research; the Balban CO2 tolerance test is not used. Both pauses are short comfortable pauses (phase \"hold\"), not empty-lung retention. The research hold rule says pauses come after a gentle exhale, never after a deep or fast inhale; the box pause after a slow 4 s inhale is kept because the research lists box as a default session. Verify before release."
+}

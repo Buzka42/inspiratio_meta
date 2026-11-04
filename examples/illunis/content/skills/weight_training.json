@@ -1,0 +1,51 @@
+{
+  "id": "weight_training",
+  "name": "Weight Training",
+  "description": "General resistance-training guidance for healthy adults: learn the movement, train with control, and progress gradually.",
+  "steps": [
+    { "text": "Warm up with easy movement before lifting.", "claims": ["warm_up"] },
+    { "text": "Learn each movement with a light load and controlled form before adding weight.", "claims": ["light_load_first"] },
+    { "text": "Train regularly with a few movements that use large muscle groups.", "claims": ["resistance_strength"] },
+    { "text": "Add load or repetitions gradually over time, only when form stays controlled.", "claims": ["progressive_overload"] },
+    { "text": "Give the same muscles rest days between hard sessions.", "claims": ["rest_days"] },
+    { "text": "Stop on sharp pain, chest pain or dizziness.", "claims": [] }
+  ],
+  "claims": [
+    {
+      "id": "resistance_strength",
+      "text": "Regular resistance training increases muscle strength in healthy adults.",
+      "evidence_level": "strong",
+      "source": null
+    },
+    {
+      "id": "progressive_overload",
+      "text": "Gradually increasing load or repetitions over time supports continued strength gains.",
+      "evidence_level": "strong",
+      "source": null
+    },
+    {
+      "id": "rest_days",
+      "text": "Rest days between hard sessions for the same muscles may help recovery.",
+      "evidence_level": "moderate",
+      "source": null
+    },
+    {
+      "id": "light_load_first",
+      "text": "Learning a movement with a light load before adding weight may lower the chance of injury.",
+      "evidence_level": "weak",
+      "source": null
+    },
+    {
+      "id": "warm_up",
+      "text": "A warm-up before lifting may lower the chance of injury.",
+      "evidence_level": "weak",
+      "source": null
+    }
+  ],
+  "safety_notes": [
+    "Not medical advice. Ask a clinician before starting if you have a heart condition, high blood pressure, are pregnant, or are recovering from injury.",
+    "Stop on chest pain, fainting, dizziness or sharp joint pain and seek a clinician.",
+    "No specific loads, sets, repetitions or rest times are given until the evidence review is complete."
+  ],
+  "evidence_review": "pending"
+}

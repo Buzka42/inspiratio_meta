@@ -1,0 +1,11 @@
+[Unit]
+Description=Cloudflare quick tunnel for Illunis (to the path-filter proxy only)
+After=illunis-path-filter.service
+Requires=illunis-path-filter.service
+
+[Service]
+ExecStart=/usr/bin/cloudflared tunnel --no-autoupdate --url http://127.0.0.1:8643
+Restart=on-failure
+
+[Install]
+WantedBy=default.target

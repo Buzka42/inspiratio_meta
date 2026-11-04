@@ -1,0 +1,98 @@
+{
+  "id": "loving_kindness",
+  "name": "Loving-kindness",
+  "aliases": [
+    "loving kindness",
+    "metta",
+    "kindness meditation"
+  ],
+  "kind": "meditation",
+  "level": "basic",
+  "progression": {
+    "stage": "basic_pranayama",
+    "order": 8
+  },
+  "evidence": "moderate",
+  "available": true,
+  "duration_s": 600,
+  "count_in_cycles": 3,
+  "pacing": {
+    "phases": [
+      {
+        "phase": "in",
+        "seconds": 5
+      },
+      {
+        "phase": "out",
+        "seconds": 5
+      }
+    ],
+    "rate_bpm": 6,
+    "guided": false
+  },
+  "cues": [
+    {
+      "at_s": 0,
+      "text": "Sit comfortably. Read each phrase slowly and let it rest.",
+      "speak": true
+    },
+    {
+      "at_s": 30,
+      "text": "May I be safe.",
+      "speak": true
+    },
+    {
+      "at_s": 90,
+      "text": "May I be well.",
+      "speak": true
+    },
+    {
+      "at_s": 150,
+      "text": "May I be at ease.",
+      "speak": true
+    },
+    {
+      "at_s": 300,
+      "text": "Bring to mind a friend.",
+      "speak": true
+    },
+    {
+      "at_s": 330,
+      "text": "May you be safe.",
+      "speak": true
+    },
+    {
+      "at_s": 390,
+      "text": "May you be well.",
+      "speak": true
+    },
+    {
+      "at_s": 450,
+      "text": "May you be at ease.",
+      "speak": true
+    },
+    {
+      "at_s": 570,
+      "text": "Let the phrases go and rest for a moment.",
+      "speak": true
+    }
+  ],
+  "screens": [
+    "default"
+  ],
+  "stop_prompts": [
+    "Stop if you feel distressed or uneasy.",
+    "You can stop at any time.",
+    "If strong feelings come up, you can open your eyes and stop."
+  ],
+  "copy": {
+    "intent": "Offer kind phrases to yourself, then to a friend.",
+    "end": "Take a moment before you move on. How are you feeling now?",
+    "notice": "This is not medical advice. If you have a health condition or feel unwell, speak to a qualified clinician before you practise."
+  },
+  "sources": [
+    "S39"
+  ],
+  "research_section": "5 (session 8), 3.2",
+  "note": "Moderate is for daily positive emotion in waitlist-controlled RCTs (Zeng 2015). Research gives no pacing; the default rate is an ambient, unguided visual only. Phrase timings are a team choice. The end check-in is required by the research. Verify before release."
+}

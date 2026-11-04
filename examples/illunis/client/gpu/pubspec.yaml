@@ -1,0 +1,27 @@
+name: illunis_gpu
+description: "Option B water for Illunis: GPU heightfield simulation and reflective surface on Flutter GPU."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.13.7
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Ships inside the Flutter SDK (bin/cache/pkg/flutter_gpu); not from pub.
+  # Needs Impeller and the io.flutter.embedding.android.EnableFlutterGPU
+  # manifest flag at run time.
+  flutter_gpu:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  # Compiled by tool/build_shaders.sh (SDK impellerc); app code loads it as
+  # packages/illunis_gpu/assets/water.shaderbundle.
+  assets:
+    - assets/water.shaderbundle

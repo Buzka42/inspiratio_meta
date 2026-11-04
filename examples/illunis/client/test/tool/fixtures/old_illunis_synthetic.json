@@ -1,0 +1,21 @@
+{
+  "profile": {"units": "metric", "homePlace": "Synthetic Town", "latitudeDeg": 10.5, "longitudeDeg": 20.25, "sleepSource": "journal", "stepsSource": "wearable"},
+  "journal": [
+    {"at": "2026-01-02T08:15:30.123456", "excludedFromAi": false, "id": "synthJ0000000000001", "status": "logged", "text": "I ate a synthetic zebra omelette"},
+    {"at": "2026-01-02T13:00:00.000", "excludedFromAi": false, "id": "synthJ0000000000002", "status": "logged", "text": "two quokka sandwiches"},
+    {"at": "2026-01-03T09:00:00.000000", "excludedFromAi": true, "id": "synthJ0000000000003", "status": "logged", "text": "private wombat entry"},
+    {"at": "2026-01-03T10:00:00.000000", "excludedFromAi": false, "id": "synthJ0000000000004", "status": "logged", "text": "   "},
+    {"at": "2026-01-04T07:30:00.000000", "excludedFromAi": false, "id": "synthJ0000000000005", "status": "logged", "text": "My knee feels better after the walk"}
+  ],
+  "nutrition": [
+    {"carbsG": 2.0, "confirmed": false, "day": "2026-01-02", "fatG": 15.0, "id": "n1", "journalEntryId": "synthJ0000000000001", "kcal": 300.4, "label": "omelette", "proteinG": 20.0, "source": "ai-estimate"},
+    {"carbsG": 60.0, "confirmed": true, "day": "2026-01-02", "fatG": 10.0, "id": "n2", "journalEntryId": "synthJ0000000000002", "kcal": 500.0, "label": "sandwich", "proteinG": null, "source": "parsed"},
+    {"carbsG": 5.0, "confirmed": false, "day": "2026-01-03", "fatG": 1.0, "id": "n3", "journalEntryId": "synthJ0000000000003", "kcal": 900.0, "label": "hidden", "proteinG": 50.0, "source": "ai-estimate"}
+  ],
+  "summaries": [
+    {"day": "2026-01-02", "intakeKcal": 9999.0, "proteinG": 99.0, "sleepHours": 7.5, "steps": 8000, "digest": "synthetic digest", "stepsSource": "wearable"},
+    {"day": "2026-01-03", "intakeKcal": null, "proteinG": null, "sleepHours": null, "steps": null, "digest": null},
+    {"day": "2026-01-04", "intakeKcal": 1800.0, "proteinG": 90.4, "sleepHours": null, "steps": 4321}
+  ],
+  "activities": [], "sets": [], "sleeps": [], "steps": [], "weights": []
+}

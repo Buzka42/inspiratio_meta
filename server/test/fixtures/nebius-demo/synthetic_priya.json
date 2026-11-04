@@ -1,0 +1,723 @@
+{
+  "synthetic": true,
+  "notice": "SYNTHETIC DATA: invented for demos and tests. It describes no real person.",
+  "persona": {
+    "id": "synthetic_priya",
+    "name": "Priya (synthetic)",
+    "profile": "Started a daily walk and a fixed bedtime around day 12; mood and steps trend up."
+  },
+  "seed": 25783,
+  "window": {
+    "start": "2026-09-30",
+    "end": "2026-10-29",
+    "days": 30
+  },
+  "checkins": [
+    {
+      "at": "2026-09-30T08:18:00.000Z",
+      "mood": 3,
+      "energy": 3,
+      "sleep": 3
+    },
+    {
+      "at": "2026-10-01T07:15:00.000Z",
+      "mood": 3,
+      "energy": 4,
+      "sleep": 3
+    },
+    {
+      "at": "2026-10-02T08:17:00.000Z",
+      "mood": 3,
+      "energy": 2,
+      "sleep": 4
+    },
+    {
+      "at": "2026-10-04T08:57:00.000Z",
+      "mood": 2,
+      "energy": 2,
+      "sleep": 4
+    },
+    {
+      "at": "2026-10-05T07:51:00.000Z",
+      "mood": 4,
+      "energy": 3,
+      "sleep": 2
+    },
+    {
+      "at": "2026-10-06T09:03:00.000Z",
+      "mood": 3,
+      "energy": 2,
+      "sleep": 4
+    },
+    {
+      "at": "2026-10-07T09:18:00.000Z",
+      "mood": 3,
+      "energy": 4,
+      "sleep": 3
+    },
+    {
+      "at": "2026-10-09T09:36:00.000Z",
+      "mood": 3,
+      "energy": 3,
+      "sleep": 4
+    },
+    {
+      "at": "2026-10-10T08:41:00.000Z",
+      "mood": 2,
+      "energy": 2,
+      "sleep": 4
+    },
+    {
+      "at": "2026-10-11T09:50:00.000Z",
+      "mood": 3,
+      "energy": 3,
+      "sleep": 4
+    },
+    {
+      "at": "2026-10-12T09:25:00.000Z",
+      "mood": 3,
+      "energy": 3,
+      "sleep": 3
+    },
+    {
+      "at": "2026-10-13T09:29:00.000Z",
+      "mood": 4,
+      "energy": 3,
+      "sleep": 3
+    },
+    {
+      "at": "2026-10-14T09:07:00.000Z",
+      "mood": 3,
+      "energy": 2,
+      "sleep": 3
+    },
+    {
+      "at": "2026-10-15T07:59:00.000Z",
+      "mood": 4,
+      "energy": 2,
+      "sleep": 4
+    },
+    {
+      "at": "2026-10-16T09:15:00.000Z",
+      "mood": 4,
+      "energy": 3,
+      "sleep": 3
+    },
+    {
+      "at": "2026-10-17T09:23:00.000Z",
+      "mood": 3,
+      "energy": 3,
+      "sleep": 3
+    },
+    {
+      "at": "2026-10-18T08:34:00.000Z",
+      "mood": 4,
+      "energy": 4,
+      "sleep": 4
+    },
+    {
+      "at": "2026-10-19T09:15:00.000Z",
+      "mood": 3,
+      "energy": 4,
+      "sleep": 2
+    },
+    {
+      "at": "2026-10-20T09:24:00.000Z",
+      "mood": 4,
+      "energy": 3,
+      "sleep": 4
+    },
+    {
+      "at": "2026-10-21T08:05:00.000Z",
+      "mood": 3,
+      "energy": 4,
+      "sleep": 3
+    },
+    {
+      "at": "2026-10-22T08:48:00.000Z",
+      "mood": 4,
+      "energy": 4,
+      "sleep": 5
+    },
+    {
+      "at": "2026-10-23T09:38:00.000Z",
+      "mood": 3,
+      "energy": 3,
+      "sleep": 4
+    },
+    {
+      "at": "2026-10-25T07:54:00.000Z",
+      "mood": 3,
+      "energy": 3,
+      "sleep": 5
+    },
+    {
+      "at": "2026-10-26T09:04:00.000Z",
+      "mood": 3,
+      "energy": 3,
+      "sleep": 4
+    },
+    {
+      "at": "2026-10-27T08:05:00.000Z",
+      "mood": 4,
+      "energy": 3,
+      "sleep": 5
+    },
+    {
+      "at": "2026-10-28T08:21:00.000Z",
+      "mood": 5,
+      "energy": 4,
+      "sleep": 4
+    },
+    {
+      "at": "2026-10-29T07:20:00.000Z",
+      "mood": 5,
+      "energy": 3,
+      "sleep": 4
+    }
+  ],
+  "wearable": [
+    {
+      "date": "2026-09-30",
+      "sleep_minutes": null,
+      "steps": null,
+      "resting_hr": null,
+      "flags": []
+    },
+    {
+      "date": "2026-10-01",
+      "sleep_minutes": 423,
+      "steps": 6331,
+      "resting_hr": 70,
+      "flags": []
+    },
+    {
+      "date": "2026-10-02",
+      "sleep_minutes": null,
+      "steps": null,
+      "resting_hr": null,
+      "flags": []
+    },
+    {
+      "date": "2026-10-03",
+      "sleep_minutes": 441,
+      "steps": 4003,
+      "resting_hr": 66,
+      "flags": []
+    },
+    {
+      "date": "2026-10-04",
+      "sleep_minutes": 420,
+      "steps": 7522,
+      "resting_hr": 67,
+      "flags": []
+    },
+    {
+      "date": "2026-10-05",
+      "sleep_minutes": 411,
+      "steps": 5033,
+      "resting_hr": 68,
+      "flags": []
+    },
+    {
+      "date": "2026-10-06",
+      "sleep_minutes": null,
+      "steps": null,
+      "resting_hr": null,
+      "flags": []
+    },
+    {
+      "date": "2026-10-07",
+      "sleep_minutes": 367,
+      "steps": 3712,
+      "resting_hr": 64,
+      "flags": []
+    },
+    {
+      "date": "2026-10-08",
+      "sleep_minutes": 424,
+      "steps": 5713,
+      "resting_hr": 66,
+      "flags": []
+    },
+    {
+      "date": "2026-10-09",
+      "sleep_minutes": null,
+      "steps": null,
+      "resting_hr": null,
+      "flags": [
+        "travel"
+      ]
+    },
+    {
+      "date": "2026-10-10",
+      "sleep_minutes": 409,
+      "steps": 4947,
+      "resting_hr": 73,
+      "flags": [
+        "travel"
+      ]
+    },
+    {
+      "date": "2026-10-11",
+      "sleep_minutes": 352,
+      "steps": 4375,
+      "resting_hr": 63,
+      "flags": []
+    },
+    {
+      "date": "2026-10-12",
+      "sleep_minutes": 391,
+      "steps": 4217,
+      "resting_hr": 63,
+      "flags": []
+    },
+    {
+      "date": "2026-10-13",
+      "sleep_minutes": 436,
+      "steps": 3677,
+      "resting_hr": 65,
+      "flags": []
+    },
+    {
+      "date": "2026-10-14",
+      "sleep_minutes": 409,
+      "steps": 6150,
+      "resting_hr": 66,
+      "flags": []
+    },
+    {
+      "date": "2026-10-15",
+      "sleep_minutes": 458,
+      "steps": 7774,
+      "resting_hr": 68,
+      "flags": []
+    },
+    {
+      "date": "2026-10-16",
+      "sleep_minutes": null,
+      "steps": null,
+      "resting_hr": null,
+      "flags": []
+    },
+    {
+      "date": "2026-10-17",
+      "sleep_minutes": 379,
+      "steps": 6724,
+      "resting_hr": 63,
+      "flags": []
+    },
+    {
+      "date": "2026-10-18",
+      "sleep_minutes": 432,
+      "steps": 5514,
+      "resting_hr": 65,
+      "flags": []
+    },
+    {
+      "date": "2026-10-19",
+      "sleep_minutes": 452,
+      "steps": 6545,
+      "resting_hr": 65,
+      "flags": []
+    },
+    {
+      "date": "2026-10-20",
+      "sleep_minutes": 382,
+      "steps": 5492,
+      "resting_hr": 62,
+      "flags": []
+    },
+    {
+      "date": "2026-10-21",
+      "sleep_minutes": 439,
+      "steps": 7804,
+      "resting_hr": 63,
+      "flags": []
+    },
+    {
+      "date": "2026-10-22",
+      "sleep_minutes": 479,
+      "steps": 8246,
+      "resting_hr": 68,
+      "flags": []
+    },
+    {
+      "date": "2026-10-23",
+      "sleep_minutes": 440,
+      "steps": 5427,
+      "resting_hr": 65,
+      "flags": []
+    },
+    {
+      "date": "2026-10-24",
+      "sleep_minutes": 399,
+      "steps": 7850,
+      "resting_hr": 64,
+      "flags": []
+    },
+    {
+      "date": "2026-10-25",
+      "sleep_minutes": 477,
+      "steps": 7927,
+      "resting_hr": 60,
+      "flags": []
+    },
+    {
+      "date": "2026-10-26",
+      "sleep_minutes": 500,
+      "steps": 9959,
+      "resting_hr": 62,
+      "flags": []
+    },
+    {
+      "date": "2026-10-27",
+      "sleep_minutes": 458,
+      "steps": 6813,
+      "resting_hr": 64,
+      "flags": []
+    },
+    {
+      "date": "2026-10-28",
+      "sleep_minutes": 481,
+      "steps": 9666,
+      "resting_hr": 65,
+      "flags": []
+    },
+    {
+      "date": "2026-10-29",
+      "sleep_minutes": null,
+      "steps": null,
+      "resting_hr": null,
+      "flags": []
+    }
+  ],
+  "analysis_21d_body": {
+    "checkins": [
+      {
+        "at": "2026-10-09T09:36:00.000Z",
+        "mood": 3,
+        "energy": 3,
+        "sleep": 4
+      },
+      {
+        "at": "2026-10-10T08:41:00.000Z",
+        "mood": 2,
+        "energy": 2,
+        "sleep": 4
+      },
+      {
+        "at": "2026-10-11T09:50:00.000Z",
+        "mood": 3,
+        "energy": 3,
+        "sleep": 4
+      },
+      {
+        "at": "2026-10-12T09:25:00.000Z",
+        "mood": 3,
+        "energy": 3,
+        "sleep": 3
+      },
+      {
+        "at": "2026-10-13T09:29:00.000Z",
+        "mood": 4,
+        "energy": 3,
+        "sleep": 3
+      },
+      {
+        "at": "2026-10-14T09:07:00.000Z",
+        "mood": 3,
+        "energy": 2,
+        "sleep": 3
+      },
+      {
+        "at": "2026-10-15T07:59:00.000Z",
+        "mood": 4,
+        "energy": 2,
+        "sleep": 4
+      },
+      {
+        "at": "2026-10-16T09:15:00.000Z",
+        "mood": 4,
+        "energy": 3,
+        "sleep": 3
+      },
+      {
+        "at": "2026-10-17T09:23:00.000Z",
+        "mood": 3,
+        "energy": 3,
+        "sleep": 3
+      },
+      {
+        "at": "2026-10-18T08:34:00.000Z",
+        "mood": 4,
+        "energy": 4,
+        "sleep": 4
+      },
+      {
+        "at": "2026-10-19T09:15:00.000Z",
+        "mood": 3,
+        "energy": 4,
+        "sleep": 2
+      },
+      {
+        "at": "2026-10-20T09:24:00.000Z",
+        "mood": 4,
+        "energy": 3,
+        "sleep": 4
+      },
+      {
+        "at": "2026-10-21T08:05:00.000Z",
+        "mood": 3,
+        "energy": 4,
+        "sleep": 3
+      },
+      {
+        "at": "2026-10-22T08:48:00.000Z",
+        "mood": 4,
+        "energy": 4,
+        "sleep": 5
+      },
+      {
+        "at": "2026-10-23T09:38:00.000Z",
+        "mood": 3,
+        "energy": 3,
+        "sleep": 4
+      },
+      {
+        "at": "2026-10-25T07:54:00.000Z",
+        "mood": 3,
+        "energy": 3,
+        "sleep": 5
+      },
+      {
+        "at": "2026-10-26T09:04:00.000Z",
+        "mood": 3,
+        "energy": 3,
+        "sleep": 4
+      },
+      {
+        "at": "2026-10-27T08:05:00.000Z",
+        "mood": 4,
+        "energy": 3,
+        "sleep": 5
+      },
+      {
+        "at": "2026-10-28T08:21:00.000Z",
+        "mood": 5,
+        "energy": 4,
+        "sleep": 4
+      },
+      {
+        "at": "2026-10-29T07:20:00.000Z",
+        "mood": 5,
+        "energy": 3,
+        "sleep": 4
+      }
+    ],
+    "start": "2026-10-09",
+    "tz": "UTC",
+    "signals": [
+      {
+        "date": "2026-10-09",
+        "resting_hr": null,
+        "hrv_rmssd": null,
+        "sleep_hours": null,
+        "flags": [
+          "travel"
+        ]
+      },
+      {
+        "date": "2026-10-10",
+        "resting_hr": 73,
+        "hrv_rmssd": null,
+        "sleep_hours": 6.82,
+        "flags": [
+          "travel"
+        ]
+      },
+      {
+        "date": "2026-10-11",
+        "resting_hr": 63,
+        "hrv_rmssd": null,
+        "sleep_hours": 5.87,
+        "flags": []
+      },
+      {
+        "date": "2026-10-12",
+        "resting_hr": 63,
+        "hrv_rmssd": null,
+        "sleep_hours": 6.52,
+        "flags": []
+      },
+      {
+        "date": "2026-10-13",
+        "resting_hr": 65,
+        "hrv_rmssd": null,
+        "sleep_hours": 7.27,
+        "flags": []
+      },
+      {
+        "date": "2026-10-14",
+        "resting_hr": 66,
+        "hrv_rmssd": null,
+        "sleep_hours": 6.82,
+        "flags": []
+      },
+      {
+        "date": "2026-10-15",
+        "resting_hr": 68,
+        "hrv_rmssd": null,
+        "sleep_hours": 7.63,
+        "flags": []
+      },
+      {
+        "date": "2026-10-16",
+        "resting_hr": null,
+        "hrv_rmssd": null,
+        "sleep_hours": null,
+        "flags": []
+      },
+      {
+        "date": "2026-10-17",
+        "resting_hr": 63,
+        "hrv_rmssd": null,
+        "sleep_hours": 6.32,
+        "flags": []
+      },
+      {
+        "date": "2026-10-18",
+        "resting_hr": 65,
+        "hrv_rmssd": null,
+        "sleep_hours": 7.2,
+        "flags": []
+      },
+      {
+        "date": "2026-10-19",
+        "resting_hr": 65,
+        "hrv_rmssd": null,
+        "sleep_hours": 7.53,
+        "flags": []
+      },
+      {
+        "date": "2026-10-20",
+        "resting_hr": 62,
+        "hrv_rmssd": null,
+        "sleep_hours": 6.37,
+        "flags": []
+      },
+      {
+        "date": "2026-10-21",
+        "resting_hr": 63,
+        "hrv_rmssd": null,
+        "sleep_hours": 7.32,
+        "flags": []
+      },
+      {
+        "date": "2026-10-22",
+        "resting_hr": 68,
+        "hrv_rmssd": null,
+        "sleep_hours": 7.98,
+        "flags": []
+      },
+      {
+        "date": "2026-10-23",
+        "resting_hr": 65,
+        "hrv_rmssd": null,
+        "sleep_hours": 7.33,
+        "flags": []
+      },
+      {
+        "date": "2026-10-24",
+        "resting_hr": 64,
+        "hrv_rmssd": null,
+        "sleep_hours": 6.65,
+        "flags": []
+      },
+      {
+        "date": "2026-10-25",
+        "resting_hr": 60,
+        "hrv_rmssd": null,
+        "sleep_hours": 7.95,
+        "flags": []
+      },
+      {
+        "date": "2026-10-26",
+        "resting_hr": 62,
+        "hrv_rmssd": null,
+        "sleep_hours": 8.33,
+        "flags": []
+      },
+      {
+        "date": "2026-10-27",
+        "resting_hr": 64,
+        "hrv_rmssd": null,
+        "sleep_hours": 7.63,
+        "flags": []
+      },
+      {
+        "date": "2026-10-28",
+        "resting_hr": 65,
+        "hrv_rmssd": null,
+        "sleep_hours": 8.02,
+        "flags": []
+      },
+      {
+        "date": "2026-10-29",
+        "resting_hr": null,
+        "hrv_rmssd": null,
+        "sleep_hours": null,
+        "flags": []
+      }
+    ]
+  },
+  "sessions": [
+    {
+      "id": "synthetic_priya-s1",
+      "at": "2026-10-04T18:17:00.000Z",
+      "summary": "Decided to try a daily walk after lunch.",
+      "synthetic": true
+    },
+    {
+      "id": "synthetic_priya-s2",
+      "at": "2026-10-14T18:15:00.000Z",
+      "summary": "Set a fixed bedtime; asked how to keep it on weekends.",
+      "synthetic": true
+    },
+    {
+      "id": "synthetic_priya-s3",
+      "at": "2026-10-21T18:47:00.000Z",
+      "summary": "Reported feeling a bit lighter this week.",
+      "synthetic": true
+    },
+    {
+      "id": "synthetic_priya-s4",
+      "at": "2026-10-29T18:14:00.000Z",
+      "summary": "Chat about meal planning for the week.",
+      "synthetic": true
+    }
+  ],
+  "memory_notes": [
+    {
+      "text": "Started a daily walk after lunch around day 12.",
+      "kind": "note",
+      "source": "synthetic",
+      "confidence": 0.8,
+      "expires_at": null
+    },
+    {
+      "text": "Keeps a fixed bedtime on weekdays.",
+      "kind": "note",
+      "source": "synthetic",
+      "confidence": 0.7,
+      "expires_at": null
+    },
+    {
+      "text": "Mood self-ratings were higher in the last week than in the first week.",
+      "kind": "hypothesis",
+      "source": "synthetic",
+      "confidence": 0.4,
+      "expires_at": "2026-11-12T23:59:59.000Z"
+    }
+  ]
+}

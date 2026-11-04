@@ -1,0 +1,39 @@
+{
+  "id": "meditation_basics",
+  "name": "Meditation Basics",
+  "description": "A short guided pause: settle, notice your breath, and return gently to the present. It is a relaxing practice you can stop at any time. It is not a treatment for any condition.",
+  "steps": [
+    { "text": "Sit or lie comfortably and let your eyes rest closed or softly lowered.", "claims": [] },
+    { "text": "Notice the feeling of your body where it touches the chair or the floor.", "claims": ["body_awareness"] },
+    { "text": "Let your attention rest on the breath coming in and going out, without changing it.", "claims": ["breath_focus"] },
+    { "text": "When your mind wanders, notice that gently and bring your attention back to the breath.", "claims": ["return_attention"] },
+    { "text": "End the pause by opening your eyes and noticing the sounds in the room.", "claims": [] }
+  ],
+  "claims": [
+    {
+      "id": "body_awareness",
+      "text": "Noticing the body can be a simple way to feel more grounded in the present moment.",
+      "evidence_level": "unverified",
+      "source": null
+    },
+    {
+      "id": "breath_focus",
+      "text": "Paying gentle attention to the breath may help some people feel calmer for a short time.",
+      "evidence_level": "unverified",
+      "source": null
+    },
+    {
+      "id": "return_attention",
+      "text": "Returning attention after it wanders is a common part of many meditation practices.",
+      "evidence_level": "unverified",
+      "source": null
+    }
+  ],
+  "safety_notes": [
+    "Not medical advice and not a treatment for any medical or mental health condition.",
+    "Stop if the practice feels distressing, and open your eyes or move as you like.",
+    "Do not practise while driving or operating machinery.",
+    "If you have a health condition, ask a clinician before starting a new practice."
+  ],
+  "evidence_review": "pending"
+}

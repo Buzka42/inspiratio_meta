@@ -1,0 +1,75 @@
+{
+  "id": "long_exhale",
+  "name": "Long exhale",
+  "aliases": [
+    "extended exhale",
+    "longer out-breath",
+    "long out breath"
+  ],
+  "kind": "breath",
+  "level": "basic",
+  "progression": {
+    "stage": "basic_pranayama",
+    "order": 3
+  },
+  "evidence": "weak",
+  "available": true,
+  "duration_s": 300,
+  "count_in_cycles": 3,
+  "pacing": {
+    "phases": [
+      {
+        "phase": "in",
+        "seconds": 4
+      },
+      {
+        "phase": "out",
+        "seconds": 6
+      }
+    ],
+    "rate_bpm": 6,
+    "guided": true
+  },
+  "cues": [
+    {
+      "at_s": 0,
+      "text": "Breathe in gently, then let the out-breath be longer and slower.",
+      "speak": true
+    },
+    {
+      "at_s": 60,
+      "text": "There are no holds. Keep the breath soft.",
+      "speak": true
+    },
+    {
+      "at_s": 150,
+      "text": "If you feel dizzy, stop and breathe normally.",
+      "speak": true
+    },
+    {
+      "at_s": 270,
+      "text": "A few more breaths.",
+      "speak": true
+    }
+  ],
+  "screens": [
+    "default"
+  ],
+  "stop_prompts": [
+    "Stop if you feel dizzy or lightheaded.",
+    "Stop if you feel tingling or numbness in your hands or face.",
+    "Stop if your chest feels tight.",
+    "Stop if your vision changes or blurs.",
+    "You can stop at any time."
+  ],
+  "copy": {
+    "intent": "Breathe in gently and let a longer out-breath settle you.",
+    "end": "Let your breath return to its own rhythm. Notice how you feel now.",
+    "notice": "This is not medical advice. If you have a health condition or feel unwell, speak to a qualified clinician before you practise."
+  },
+  "sources": [
+    "S17"
+  ],
+  "research_section": "5 (session 3), 2.1, 6.1",
+  "note": "Research gives 4 s in and 6 to 8 s out; 6 s chosen so the rate is exactly 6 breaths per minute (8 s gives 5). The source trial match is not confirmed (snippet). Verify before release."
+}

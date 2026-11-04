@@ -1,0 +1,23 @@
+{
+  "$id": "illunis/personality.schema.json",
+  "title": "Personality",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "voice_style", "system_prompt", "safety_notes", "banned_phrases"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z][a-z0-9_]*$" },
+    "name": { "type": "string", "minLength": 1, "maxLength": 60 },
+    "voice_style": { "type": "string", "minLength": 1, "maxLength": 200 },
+    "system_prompt": { "type": "string", "minLength": 20, "maxLength": 600 },
+    "safety_notes": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "banned_phrases": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 }
+    }
+  }
+}

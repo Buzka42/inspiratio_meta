@@ -1,0 +1,230 @@
+{
+ "name": "flags_and_missing",
+ "derivation": [
+  "resting_hr days 1-14: day 7 (alcohol, 80) and day 8 (illness, 75) excluded. Remaining 12: deviations +3,-3,+3,-3,+2,-2 and six 0s around 60. Sum of squares 44, SD = sqrt(44/11) = 2. Including the flagged days would give mean 62.5.",
+  "Days 15-21: 64,64,null,64,90 (travel, excluded),64,64 -> 5 valid, mean 64, z 2 -> rising, medium (baseline n 12 >= 10, recent 5 >= 5).",
+  "hrv_rmssd and sleep_hours are null on every day -> building_baseline with 0 valid nights. Day 17 has no data at all -> one missing night."
+ ],
+ "series": [
+  {
+   "date": "2026-01-01",
+   "resting_hr": 63,
+   "hrv_rmssd": null,
+   "sleep_hours": null,
+   "flags": []
+  },
+  {
+   "date": "2026-01-02",
+   "resting_hr": 57,
+   "hrv_rmssd": null,
+   "sleep_hours": null,
+   "flags": []
+  },
+  {
+   "date": "2026-01-03",
+   "resting_hr": 63,
+   "hrv_rmssd": null,
+   "sleep_hours": null,
+   "flags": []
+  },
+  {
+   "date": "2026-01-04",
+   "resting_hr": 57,
+   "hrv_rmssd": null,
+   "sleep_hours": null,
+   "flags": []
+  },
+  {
+   "date": "2026-01-05",
+   "resting_hr": 62,
+   "hrv_rmssd": null,
+   "sleep_hours": null,
+   "flags": []
+  },
+  {
+   "date": "2026-01-06",
+   "resting_hr": 58,
+   "hrv_rmssd": null,
+   "sleep_hours": null,
+   "flags": []
+  },
+  {
+   "date": "2026-01-07",
+   "resting_hr": 80,
+   "hrv_rmssd": null,
+   "sleep_hours": null,
+   "flags": [
+    "alcohol"
+   ]
+  },
+  {
+   "date": "2026-01-08",
+   "resting_hr": 75,
+   "hrv_rmssd": null,
+   "sleep_hours": null,
+   "flags": [
+    "illness"
+   ]
+  },
+  {
+   "date": "2026-01-09",
+   "resting_hr": 60,
+   "hrv_rmssd": null,
+   "sleep_hours": null,
+   "flags": []
+  },
+  {
+   "date": "2026-01-10",
+   "resting_hr": 60,
+   "hrv_rmssd": null,
+   "sleep_hours": null,
+   "flags": []
+  },
+  {
+   "date": "2026-01-11",
+   "resting_hr": 60,
+   "hrv_rmssd": null,
+   "sleep_hours": null,
+   "flags": []
+  },
+  {
+   "date": "2026-01-12",
+   "resting_hr": 60,
+   "hrv_rmssd": null,
+   "sleep_hours": null,
+   "flags": []
+  },
+  {
+   "date": "2026-01-13",
+   "resting_hr": 60,
+   "hrv_rmssd": null,
+   "sleep_hours": null,
+   "flags": []
+  },
+  {
+   "date": "2026-01-14",
+   "resting_hr": 60,
+   "hrv_rmssd": null,
+   "sleep_hours": null,
+   "flags": []
+  },
+  {
+   "date": "2026-01-15",
+   "resting_hr": 64,
+   "hrv_rmssd": null,
+   "sleep_hours": null,
+   "flags": []
+  },
+  {
+   "date": "2026-01-16",
+   "resting_hr": 64,
+   "hrv_rmssd": null,
+   "sleep_hours": null,
+   "flags": []
+  },
+  {
+   "date": "2026-01-17",
+   "resting_hr": null,
+   "hrv_rmssd": null,
+   "sleep_hours": null,
+   "flags": []
+  },
+  {
+   "date": "2026-01-18",
+   "resting_hr": 64,
+   "hrv_rmssd": null,
+   "sleep_hours": null,
+   "flags": []
+  },
+  {
+   "date": "2026-01-19",
+   "resting_hr": 90,
+   "hrv_rmssd": null,
+   "sleep_hours": null,
+   "flags": [
+    "travel",
+    "late_meal"
+   ]
+  },
+  {
+   "date": "2026-01-20",
+   "resting_hr": 64,
+   "hrv_rmssd": null,
+   "sleep_hours": null,
+   "flags": []
+  },
+  {
+   "date": "2026-01-21",
+   "resting_hr": 64,
+   "hrv_rmssd": null,
+   "sleep_hours": null,
+   "flags": []
+  }
+ ],
+ "expected": {
+  "resting_hr": {
+   "baseline": {
+    "mean": 60,
+    "sd": 2,
+    "n": 12
+   },
+   "recent_mean": 64,
+   "recent_valid_nights": 5,
+   "z_score": 2,
+   "trend": "rising"
+  },
+  "hrv_rmssd": {
+   "baseline": "building_baseline",
+   "baseline_valid_nights": 0
+  },
+  "sleep_hours": {
+   "baseline": "building_baseline",
+   "baseline_valid_nights": 0
+  },
+  "findings": [
+   [
+    "resting_hr",
+    "medium"
+   ],
+   [
+    "hrv_rmssd",
+    "low"
+   ],
+   [
+    "sleep_hours",
+    "low"
+   ],
+   [
+    null,
+    "low"
+   ],
+   [
+    null,
+    "low"
+   ]
+  ],
+  "missing_nights": [
+   "2026-01-17"
+  ],
+  "flagged_days": [
+   {
+    "date": "2026-01-07",
+    "flags": [
+     "alcohol"
+    ]
+   },
+   {
+    "date": "2026-01-08",
+    "flags": [
+     "illness"
+    ]
+   },
+   {
+    "date": "2026-01-19",
+    "flags": [
+     "travel"
+    ]
+   }
+  ]
+ }
+}

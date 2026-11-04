@@ -1,0 +1,61 @@
+{
+  "id": "bhramari",
+  "name": "Bhramari",
+  "aliases": [
+    "humming bee breath",
+    "bee breath",
+    "humming breath"
+  ],
+  "kind": "breath",
+  "level": "advanced",
+  "evidence": "weak",
+  "available": true,
+  "duration_s": 300,
+  "count_in_cycles": 3,
+  "pacing": {
+    "phases": [
+      {
+        "phase": "in",
+        "seconds": 5
+      },
+      {
+        "phase": "out",
+        "seconds": 5
+      }
+    ],
+    "rate_bpm": 6,
+    "guided": true
+  },
+  "cues": [
+    {
+      "at_s": 0,
+      "text": "Breathe in through your nose, then hum softly as you breathe out. There are no holds.",
+      "speak": true
+    },
+    {
+      "at_s": 150,
+      "text": "Keep the hum gentle and easy.",
+      "speak": true
+    }
+  ],
+  "screens": [
+    "default"
+  ],
+  "stop_prompts": [
+    "Stop if you feel dizzy or lightheaded.",
+    "Stop if you feel tingling or numbness in your hands or face.",
+    "Stop if your chest feels tight.",
+    "Stop if your vision changes or blurs.",
+    "You can stop at any time."
+  ],
+  "copy": {
+    "intent": "A slow out-breath with a soft hum.",
+    "end": "Let your breath return to its own rhythm. Notice how you feel now.",
+    "notice": "This is not medical advice. If you have a health condition or feel unwell, speak to a qualified clinician before you practise."
+  },
+  "sources": [
+    "S14"
+  ],
+  "research_section": "2.1, 5.2",
+  "note": "Deferred, not excluded (research 5.2). Reviews read only as search summaries. Research gives no timing; the research default 5 s in, 5 s out is used with no retention. Research section 4 lists no extra screen. Verify before release."
+}

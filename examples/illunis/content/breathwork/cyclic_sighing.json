@@ -1,0 +1,79 @@
+{
+  "id": "cyclic_sighing",
+  "name": "Cyclic sighing",
+  "aliases": [
+    "physiological sigh",
+    "double inhale",
+    "sighing breath"
+  ],
+  "kind": "breath",
+  "level": "basic",
+  "progression": {
+    "stage": "basic_pranayama",
+    "order": 4
+  },
+  "evidence": "weak",
+  "available": true,
+  "duration_s": 300,
+  "count_in_cycles": 3,
+  "pacing": {
+    "phases": [
+      {
+        "phase": "in",
+        "seconds": 3
+      },
+      {
+        "phase": "top_up",
+        "seconds": 1
+      },
+      {
+        "phase": "out",
+        "seconds": 6
+      }
+    ],
+    "rate_bpm": 6,
+    "guided": true
+  },
+  "cues": [
+    {
+      "at_s": 0,
+      "text": "Breathe in through your nose, take a short second sip of air, then breathe out slowly through your mouth.",
+      "speak": true
+    },
+    {
+      "at_s": 60,
+      "text": "There are no holds. Keep the top-up small and easy.",
+      "speak": true
+    },
+    {
+      "at_s": 150,
+      "text": "If you feel dizzy, stop and breathe normally.",
+      "speak": true
+    },
+    {
+      "at_s": 270,
+      "text": "A few more breaths.",
+      "speak": true
+    }
+  ],
+  "screens": [
+    "default"
+  ],
+  "stop_prompts": [
+    "Stop if you feel dizzy or lightheaded.",
+    "Stop if you feel tingling or numbness in your hands or face.",
+    "Stop if your chest feels tight.",
+    "Stop if your vision changes or blurs.",
+    "You can stop at any time."
+  ],
+  "copy": {
+    "intent": "Two easy in-breaths through the nose, then a long, slow out-breath.",
+    "end": "Let your breath return to its own rhythm. Notice how you feel now.",
+    "notice": "This is not medical advice. If you have a health condition or feel unwell, speak to a qualified clinician before you practise."
+  },
+  "sources": [
+    "S41"
+  ],
+  "research_section": "5 (session 4), 5.1, 6.1",
+  "note": "Exact seconds are not in the read text of Balban 2023; the research says use a team choice. The 3 s in, 1 s top-up, 6 s out split is a team choice set to the research default rate of 6 breaths per minute. Evidence: one remote RCT with small arms. Verify before release against the full paper."
+}

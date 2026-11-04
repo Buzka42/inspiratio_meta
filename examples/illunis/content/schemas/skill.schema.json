@@ -1,0 +1,46 @@
+{
+  "$id": "illunis/skill.schema.json",
+  "title": "Skill pack",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "description", "steps", "claims", "safety_notes", "evidence_review"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z][a-z0-9_]*$" },
+    "name": { "type": "string", "minLength": 1, "maxLength": 60 },
+    "description": { "type": "string", "minLength": 1, "maxLength": 400 },
+    "steps": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["text", "claims"],
+        "properties": {
+          "text": { "type": "string", "minLength": 1 },
+          "claims": { "type": "array", "items": { "type": "string", "pattern": "^[a-z][a-z0-9_]*$" } }
+        }
+      }
+    },
+    "claims": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "text", "evidence_level", "source"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z][a-z0-9_]*$" },
+          "text": { "type": "string", "minLength": 1 },
+          "evidence_level": { "type": "string", "enum": ["strong", "moderate", "weak", "unverified"] },
+          "source": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "safety_notes": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "evidence_review": { "type": "string", "enum": ["pending", "reviewed"] }
+  }
+}

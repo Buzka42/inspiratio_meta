@@ -1,0 +1,10 @@
+[Unit]
+Description=Illunis path-filter proxy (quick tunnel -> Hermes /p/illunis only)
+After=hermes-gateway.service
+
+[Service]
+ExecStart=/usr/bin/python3 -I %h/Projects/illunis-rework/integrations/hermes/proxy/path_filter.py --listen 127.0.0.1:8643 --upstream 127.0.0.1:8642
+Restart=on-failure
+
+[Install]
+WantedBy=default.target

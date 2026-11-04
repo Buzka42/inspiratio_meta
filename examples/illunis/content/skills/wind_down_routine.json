@@ -1,0 +1,51 @@
+{
+  "id": "wind_down_routine",
+  "name": "Wind-Down Routine",
+  "description": "A simple set of evening steps to ease from the day toward rest. It is a routine you can adapt to your own life. It is not a sleep treatment or medical advice.",
+  "steps": [
+    { "text": "Pick a time in the evening to stop work and put away any tasks for later.", "claims": ["set_cutoff"] },
+    { "text": "Dim the lights and tidy one small area of the room.", "claims": ["dim_light"] },
+    { "text": "Write down anything on your mind so it can wait until the morning.", "claims": ["write_worries"] },
+    { "text": "Do a gentle stretch or a few slow breaths, whatever feels pleasant.", "claims": ["gentle_stretch"] },
+    { "text": "Move to your bed or a comfortable chair and let the routine end without any pressure to fall asleep.", "claims": ["no_pressure"] },
+    { "text": "If rest is a persistent concern, talk with a clinician.", "claims": [] }
+  ],
+  "claims": [
+    {
+      "id": "set_cutoff",
+      "text": "A clear cutoff for work in the evening may make it easier to switch off.",
+      "evidence_level": "unverified",
+      "source": null
+    },
+    {
+      "id": "dim_light",
+      "text": "Softer lighting in the evening may feel more relaxing for some people.",
+      "evidence_level": "unverified",
+      "source": null
+    },
+    {
+      "id": "write_worries",
+      "text": "Writing down thoughts can be a way to set them aside for later.",
+      "evidence_level": "unverified",
+      "source": null
+    },
+    {
+      "id": "gentle_stretch",
+      "text": "Light stretching is commonly described as a pleasant way to release tension.",
+      "evidence_level": "unverified",
+      "source": null
+    },
+    {
+      "id": "no_pressure",
+      "text": "Letting go of the aim to fall asleep may feel less stressful than trying hard to do so.",
+      "evidence_level": "unverified",
+      "source": null
+    }
+  ],
+  "safety_notes": [
+    "Not medical advice and not a sleep treatment for any condition.",
+    "Refer persistent sleep trouble to a clinician.",
+    "Stop any stretch that causes pain, dizziness or discomfort."
+  ],
+  "evidence_review": "pending"
+}

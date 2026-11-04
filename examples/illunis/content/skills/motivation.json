@@ -1,0 +1,43 @@
+{
+  "id": "motivation",
+  "name": "Motivation",
+  "description": "Simple, evidence-informed ways to start and keep going: specific plans, small next steps, tracking, and a kind response to setbacks.",
+  "steps": [
+    { "text": "Pick one goal and name the very next small step.", "claims": ["small_steps"] },
+    { "text": "Make an if-then plan: when and where you will do that step.", "claims": ["if_then_plans"] },
+    { "text": "Note each time you do it, so progress is visible.", "claims": ["tracking"] },
+    { "text": "After a missed day, treat it as information and plan the next step, without blame.", "claims": ["self_compassion"] }
+  ],
+  "claims": [
+    {
+      "id": "if_then_plans",
+      "text": "A specific if-then plan for when and where to act can make follow-through more likely.",
+      "evidence_level": "moderate",
+      "source": null
+    },
+    {
+      "id": "tracking",
+      "text": "Tracking progress can support reaching a goal.",
+      "evidence_level": "moderate",
+      "source": null
+    },
+    {
+      "id": "small_steps",
+      "text": "Breaking a goal into small next steps may make starting easier.",
+      "evidence_level": "weak",
+      "source": null
+    },
+    {
+      "id": "self_compassion",
+      "text": "Responding to a setback with self-compassion may help people get back on track.",
+      "evidence_level": "weak",
+      "source": null
+    }
+  ],
+  "safety_notes": [
+    "Not medical advice. Persistent low mood or loss of interest is a reason to speak to a clinician.",
+    "Never use shame or guilt as a motivator.",
+    "Crisis language is handled by the fixed referral response before any model call."
+  ],
+  "evidence_review": "pending"
+}

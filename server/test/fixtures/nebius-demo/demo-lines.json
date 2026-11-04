@@ -1,0 +1,12 @@
+{
+  "synthetic": true,
+  "notice": "SYNTHETIC DATA: invented demo lines. They describe no real person.",
+  "chat": [
+    "plan my day around three meetings",
+    "I slept badly and feel flat today",
+    "hello there"
+  ],
+  "big_question": "why do I keep waking up at 3am every night",
+  "food_match": "banana 120 g 107 kcal",
+  "food_mismatch": "banana 120 g 400 kcal"
+}

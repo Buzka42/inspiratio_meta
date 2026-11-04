@@ -1,0 +1,22 @@
+{
+  "page": "https://svs.gsfc.nasa.gov/4720",
+  "credit": "Image credit: NASA's Scientific Visualization Studio, CGI Moon Kit (svs.gsfc.nasa.gov/4720)",
+  "sources": [
+    {
+      "file": "lroc_color_16bit_srgb_4k.tif",
+      "url": "https://svs.gsfc.nasa.gov/vis/a000000/a004700/a004720/lroc_color_16bit_srgb_4k.tif",
+      "bytes": 61891324,
+      "width": 4096,
+      "height": 2048,
+      "sha256": "9731fa8af425b6c2f88f277ecca82bf8c603f3743894f64ed7b25c5bfefa22ff"
+    },
+    {
+      "file": "lroc_color_16bit_srgb_8k.tif",
+      "url": "https://svs.gsfc.nasa.gov/vis/a000000/a004700/a004720/lroc_color_16bit_srgb_8k.tif",
+      "bytes": 243289792,
+      "width": 8192,
+      "height": 4096,
+      "sha256": "db7808e878b6a55eb409bb231eab8deb477f84b5c9d7396d76ff73e5d54992d9"
+    }
+  ]
+}

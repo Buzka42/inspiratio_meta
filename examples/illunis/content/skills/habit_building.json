@@ -1,0 +1,50 @@
+{
+  "id": "habit_building",
+  "name": "Habit Building",
+  "description": "Plan small, specific steps that fit into your day and track them lightly. It is a planning approach, not a guarantee of results.",
+  "steps": [
+    { "text": "Pick one habit and describe it as a single small action you can do today.", "claims": ["small_steps"] },
+    { "text": "Choose a cue that already happens each day, such as after a morning drink.", "claims": ["existing_cue"] },
+    { "text": "Make the first version so easy that it feels almost too small.", "claims": ["easy_start"] },
+    { "text": "Note whether you did it, without judging the day.", "claims": ["track_lightly"] },
+    { "text": "If you miss a day, plan the next step rather than restarting the whole plan.", "claims": ["plan_next"] }
+  ],
+  "claims": [
+    {
+      "id": "small_steps",
+      "text": "Small, specific actions may be easier to repeat than large goals.",
+      "evidence_level": "unverified",
+      "source": null
+    },
+    {
+      "id": "existing_cue",
+      "text": "Attaching a new action to a routine you already have may make it easier to remember.",
+      "evidence_level": "unverified",
+      "source": null
+    },
+    {
+      "id": "easy_start",
+      "text": "A very easy first version can lower the effort needed to begin.",
+      "evidence_level": "unverified",
+      "source": null
+    },
+    {
+      "id": "track_lightly",
+      "text": "Simple yes or no notes can show progress without adding pressure.",
+      "evidence_level": "unverified",
+      "source": null
+    },
+    {
+      "id": "plan_next",
+      "text": "Planning the next step after a missed day may feel less discouraging than starting over.",
+      "evidence_level": "unverified",
+      "source": null
+    }
+  ],
+  "safety_notes": [
+    "Not medical advice. Habit plans do not replace advice from a clinician.",
+    "Do not push through pain, exhaustion or health warning signs to keep a habit going.",
+    "Choose habits that fit your health, time and budget."
+  ],
+  "evidence_review": "pending"
+}

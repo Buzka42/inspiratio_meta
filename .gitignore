@@ -1,0 +1,19 @@
+# build output and caches
+examples/illunis/client/build/
+examples/illunis/client/.dart_tool/
+examples/illunis/client/.flutter-plugins*
+examples/illunis/client/android/.gradle/
+examples/illunis/client/android/local.properties
+examples/illunis/client/gpu/build/
+examples/illunis/client/gpu/.dart_tool/
+server/node_modules/
+server/.wrangler/
+**/.DS_Store
+# raw inputs too large or licence-unclear for the repo
+examples/illunis/moon_assets/raw/
+# local model files and tool caches
+*.onnx
+*.bin
+__pycache__/
+*.pyc
+.pytest_cache/
