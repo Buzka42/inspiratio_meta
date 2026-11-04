@@ -33,6 +33,20 @@ Brains available (`spec.brain`; the preferred one goes first and the others are 
 
 ---
 
+## Try the demo (Android)
+
+1. Download `app-release.apk` from the [demo release](LINK_TO_RELEASE).
+2. On your Android phone, allow installs from unknown sources for your browser or file manager, then open the APK.
+3. Open Illunis. It connects to a dedicated demo device on the hosted Worker; no pairing is needed.
+
+What the demo device does:
+- It uses synthetic data only. No real person's data is on it.
+- It has its own daily quota, shared by everyone trying the demo, which resets each day.
+- Changes you approve (by chat or through the bot) apply only to the demo device and its own memory.
+
+The APK is signed with a debug key, not a release key, which is why Android asks you to allow unknown sources. The demo
+access will be revoked after judging.
+
 ## How it works
 
 ```
