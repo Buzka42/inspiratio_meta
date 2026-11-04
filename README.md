@@ -1,7 +1,26 @@
-# Inspiratio, built on top of the Illunis app
+# Inspiratio: a framework for personal assistants on Muse
 
-**Inspiratio** is the framework, and it is the submission. It is a framework for a personal agent that its user can
-change safely: one JSON spec per deploy holds the guidelines, skill switches, memory mode, brain choice and notification
+**Inspiratio** is an adaptable framework for building personal assistant apps. It is designed to run on **Muse**: the
+Muse bot is the assistant the user talks to, and the Muse models are its brain. Inspiratio turns that assistant into one
+the user can configure and reshape by talking to it, without a developer and without a prompt rewrite.
+
+- **Assistant (Muse bot).** Designed to run on the Muse bot. The phone pairs with the bot using a short code, and a
+  signed setup message gives the bot its rules, skills, memory location and notification rules. **Tested on Hermes**, the
+  bot we can run locally: the signed setup and the bot's change requests are covered by tests, and the app's chat changes
+  were run on a phone. The live Hermes pairing and setup run still needs the profile reinstalled. The Muse bot itself is
+  not available to us, so the Muse path is prepared through a Worker-hosted backend that uses the Muse model API; it is
+  built and covered by server tests but not yet run live.
+- **Brain (Muse models).** `muse-spark-1.3` on the Meta Model API writes the answers and runs the cited web search. Muse
+  Spark Open on Baseten is an alternative brain. Nemotron on Nebius is a fallback, and the response names whichever model
+  answered.
+- **Council (checks).** Role-separated experts answer from retrieved sources, and uncited claims are dropped before the
+  reply. Fine-tuned Spark models for the council are planned and not yet built.
+
+Enforcement runs across all three: approved settings apply to every request, guardrails run in code before any model
+call, and personal data leaves the device only with the user's approval.
+
+**Inspiratio** is the framework and the submission. It lets a personal agent's user change its behaviour safely: one JSON
+spec per deploy holds the guidelines, skill switches, memory mode, brain choice and notification
 rules. The user asks for a change in words; the Worker validates it, shows a diff and a readback, and applies it only after
 the user approves. Guardrails live in code, so no spec can turn them off. The framework (spec and enforcement, skill
 registry and modules, knowledge banks, bot integration and pairing, the policy proxy, the chat settings card) was built
