@@ -136,7 +136,7 @@ replace a base model without changing the aggregator.
 | Role | Model and provider | Status |
 |---|---|---|
 | Brain and aggregator | `muse-spark-1.3` on the Meta Model API (standard tier) | Built; preferred by the Meta demo deploy |
-| Brain adapter | Muse Spark Open on Baseten (`meta-models/muse-spark-open`) | Built; tool-call behaviour unconfirmed |
+| Brain adapter | Muse Spark Open on Baseten (`meta-models/muse-spark-open-1026`) | Built; tool-call behaviour unconfirmed |
 | Brain, older path | Nemotron on Nebius Token Factory | Built; used for the Nebius submission |
 | Council experts | Role-separated prompts on the same brain, with RAG | Built |
 | Speech in | On-device speech-to-text now; Muse Voice Transcribe 1.0 under evaluation | See Voice |

@@ -52,7 +52,7 @@ Nebius). The model behind the live Hermes bot is unverified.
 | Brain | Model | Status |
 |---|---|---|
 | Meta Muse API | `muse-spark-1.3` (set by `META_MODEL`, standard tier; `server/src/providers/meta.js`) | BUILT. Preferred by the Meta demo deploy for the council and the daily reply. |
-| Muse Spark Open on Baseten (adapter) | `meta-models/muse-spark-open` by default (`server/src/providers/baseten.js`) | BUILT. Never sends `response_format` or `tool_choice`; tool-call behaviour unconfirmed. |
+| Muse Spark Open on Baseten (adapter) | `meta-models/muse-spark-open-1026` by default (`server/src/providers/baseten.js`) | BUILT. Never sends `response_format` or `tool_choice`; tool-call behaviour unconfirmed. |
 | Nebius Token Factory (older path) | Set by `COUNCIL_NEBIUS_MODEL`; Nemotron in the deploys (`server/src/nebius.js`) | BUILT. Used for the Nebius submission. |
 
 **Memory** (`spec.memory.mode`: `off`, `phone`, `hermes`; enforced by `memoryAllowed` in `server/src/spec/policy.js`).

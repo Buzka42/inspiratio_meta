@@ -46,8 +46,6 @@ applications, personality analyzers and anything medical. The demo must not look
 - **Name:** Inspiratio. Trademark cleared by the owner (2026-11-04).
 - **Trademark risk:** a registered INSPIRATION word mark in Class 9 (software), reg. 1768514, reportedly owned by
   Inspiration Software, Inc. Status and owner are unverified. Check USPTO TSDR before any public use.
-- **Until cleared:** keep the name out of the repo name, the submission and any public page. Use "the framework" in the
-  submission text.
 
 ## Differentiators to show (the concept is not new)
 The council pattern is well known (Karpathy's llm-council, Nov 2025), and assistant plugin ecosystems exist (OpenClaw,
